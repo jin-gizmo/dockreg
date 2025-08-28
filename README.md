@@ -69,7 +69,7 @@ bin/dockreg --help
 
 **Dockreg** is not yet available in PyPI, sorry. Coming soon. 
 
-In the mean time, grab a distribution bundle created from the repo using `make
+In the meantime, grab a distribution bundle created from the repo using `make
 pkg` and then ...
 
 ```bash
