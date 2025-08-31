@@ -53,7 +53,9 @@ class CliCommand(ABC):
     # --------------------------------------------------------------------------
     def __init__(self, subparser):
         """Initialize the command handler."""
-        self.argp = subparser.add_parser(self.name, aliases=self.aliases, help=self.help_)
+        self.argp = subparser.add_parser(
+            self.name, aliases=self.aliases, help=self.help_, description=self.help_
+        )
         self.argp.set_defaults(handler=self)
 
     # --------------------------------------------------------------------------

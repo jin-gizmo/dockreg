@@ -261,6 +261,10 @@ multi-platform builds.
 
 ## Release Notes
 
+#### v1.5.0
+
+*   Added description to help messages for subcommands.
+
 #### v1.4.0
 
 *   Open source base release.
