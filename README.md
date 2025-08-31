@@ -61,8 +61,7 @@ make pkg
 To run the code directly from the repo:
 
 ```bash
-export PYTHONPATH=.
-bin/dockreg --help
+python3 -m dockreg.cli.dockreg --help
 ```
 
 ### Install with Pip
