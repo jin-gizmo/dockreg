@@ -3,9 +3,9 @@
 > [!NOTE]
 > **About this project**
 > 
-> **Dockreg** was developed at [Origin Energy](https://www.originenergy.com.au) as part of the
-> *Jindabyne* initiative. While not part of our core IP, it proved valuable
-> internally, and we're sharing it in the hope it's useful to others.
+> **Dockreg** was developed at [Origin Energy](https://www.originenergy.com.au)
+> as part of the *Jindabyne* initiative. While not part of our core IP, it proved
+> valuable internally, and we're sharing it in the hope it's useful to others.
 > 
 > Kudos to Origin for fostering a culture that empowers its people
 > to build complex technology solutions in-house.
@@ -37,9 +37,15 @@ Dockreg provides a CLI with subcommands to:
 
 ### Prerequisites
 
-**Dockreg** depends on docker to be able to run the standard docker registry
-image `registry`. It has been tested with [Docker
+**Dockreg** depends on docker to be able to run the standard docker [registry
+image](https://hub.docker.com/_/registry). It has been tested with [Docker
 Desktop](https://www.docker.com/products/docker-desktop/) on macOS.
+
+### Install with Pip
+
+```bash
+pip install dockreg
+```
 
 ### Installing from the Repo
 
@@ -64,24 +70,11 @@ To run the code directly from the repo:
 python3 -m dockreg.cli.dockreg --help
 ```
 
-### Install with Pip
-
-**Dockreg** is not yet available in PyPI, sorry. Coming soon. 
-
-In the meantime, grab a distribution bundle created from the repo using `make
-pkg` and then ...
-
-```bash
-pip install dockreg-<VERSION>.tar.gz
-```
-
 ## Using Dockreg
 
 ### TL;DR
 
 ```bash
-pip install dockreg
-
 # Start a registry localhost:5001
 dockreg start
 
