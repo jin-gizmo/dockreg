@@ -45,20 +45,13 @@ def find_cli_entry_points(*cli_pkg: str, entry_point: str = 'main') -> list[str]
 
 # ------------------------------------------------------------------------------
 # Import README.md and use it as the long-description. Must be in MANIFEST.in
-with open('README.md') as fp:
+with open('PYPI.md') as fp:
     long_description = '\n' + fp.read()
 
 # ------------------------------------------------------------------------------
 # Get pre-requisites from requirements.txt. Must be in MANIFEST.in
 with open('requirements.txt') as fp:
     required = [s.strip() for s in fp.readlines()]
-
-# Optional extras -- none for dockreg
-extras = {'all': []}
-for x in []:
-    with open(f'requirements-{x}.txt') as fp:
-        extras[x] = [s.strip() for s in fp.readlines()]
-        extras['all'].extend(extras[x])
 
 # ------------------------------------------------------------------------------
 packages = find_packages(exclude=['tests', '*.tests', '*.tests.*', 'tests.*'])
@@ -74,10 +67,10 @@ setup(
     author='Murray Andrews',
     description='Manage a local, private docker registry',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     platforms=['macOS', 'Linux'],
     python_requires=REQUIRES_PYTHON,
     install_requires=required,
-    extras_require=extras,
     include_package_data=True,
     classifiers=[
         'Development Status :: 5 - Production/Stable',

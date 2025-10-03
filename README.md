@@ -9,6 +9,8 @@
 > 
 > Kudos to Origin for fostering a culture that empowers its people
 > to build complex technology solutions in-house.
+> 
+> See more tools at [Jin Gizmo on GitHub](https://jin-gizmo.github.io).
 
 ## Overview
 
