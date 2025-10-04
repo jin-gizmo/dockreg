@@ -1,16 +1,19 @@
 # dockreg - Private Docker Registry Manager
 
-> [!NOTE]
-> **About this project**
-> 
 > **Dockreg** was developed at [Origin Energy](https://www.originenergy.com.au)
 > as part of the *Jindabyne* initiative. While not part of our core IP, it proved
 > valuable internally, and we're sharing it in the hope it's useful to others.
-> 
+>
 > Kudos to Origin for fostering a culture that empowers its people
 > to build complex technology solutions in-house.
-> 
+>
 > See more tools at [Jin Gizmo on GitHub](https://jin-gizmo.github.io).
+
+<div align="center">
+<img src="./doc/img/dockreg.png" alt="Dockreg Logo" width="120px" height="auto">
+</div>
+
+<br clear="left"/>
 
 ## Overview
 
@@ -93,6 +96,7 @@ dockreg inspect localhost:5001/my-image
 # When done
 dockreg stop
 ```
+
 ### Usage
 
 ```
